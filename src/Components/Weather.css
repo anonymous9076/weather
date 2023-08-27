@@ -1,0 +1,85 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+body::before {
+    background: url('./clouds.jpg');
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.container {
+    height: 60%;
+    width: 25%;
+    background-color: inherit;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px grey;
+}
+
+/*input section*/
+.search {
+    width: 100%;
+    height: 10%;
+    background-color: inherit;
+    border-radius: 10px;
+    border-bottom: 4px solid grey;
+}
+
+input {
+    width: 100%;
+    height: 97%;
+    border-style: none;
+    background-color: inherit;
+    border-radius: 0 10px 10px 0;
+    padding: 0 5%;
+}
+
+input[type=search]:focus {
+    outline: none;
+}
+
+/*input section*/
+.location {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+
+
+.text {
+    width: 92%;
+    padding: 4%;
+    height: 40%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.location >h2, h3{
+    margin: 0;
+}
+.location>h4{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.location>p{
+    letter-spacing: 5px;
+
+}
+.icons{
+filter: none;
+}
+@media screen and (max-width:600px){
+    .container{
+        width: 80%;
+        
+    }
+}
